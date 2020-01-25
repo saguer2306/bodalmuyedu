@@ -1,0 +1,9 @@
+*.pyc
+
+__pychache__
+
+ent_wed_w3
+
+db.sqlite3
+
+.DS_Store

@@ -1,0 +1,31 @@
+body,h1,h2{
+  font-family: "Raleway", sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+p {
+  line-height: 2;
+}
+
+#demo {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.hotel {
+  font-size: 18px; 
+  text-decoration: none; 
+  color: black;
+}
+
+.mySlides {
+  display:none;
+}
+.mySlides_2 {
+  display: none;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Wedding Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app_wed/inicio_app.css' %}">
+</head>
+<body>
+  <!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg" id="home" style="background: url('{% static 'app_wed/boda_muerdago_4.jpg' %}'); min-height: 100%; background-position: center; background-size: cover;">
+  
+  <div class="w3-display-topmiddle w3-text-white w3-center">
+    <br>
+    <h1 style="font-weight: 80px; font-size: 100px;">Almu & Edu</h1>
+    <h2 style="font-size: 50px;"><b>26.09.2020</b></h2>
+  </div>
+
+</header>
+
+<!-- Navbar (sticky bottom) -->
+
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:20%" class="w3-bar-item w3-button">Inicio</a>
+    <a href="#wedding" style="width:20%" class="w3-bar-item w3-button">Ceremonia</a>
+    <a href="#dormir" style="width:20%" class="w3-bar-item w3-button">Hoteles y Autobuses</a>
+    <a href="#us" style="width:20%" class="w3-bar-item w3-button">La Finca</a>
+    <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Confirmar asistencia</a>
+  </div>
+</div>
+
+<!-- Wedding information--> 
+<div class="w3-container w3-light-gray w3-center">
+  <br><br>
+  <p class="w3-large" style="font-weight: bold;">De común acuerdo, y en plena posesión de nuestras facultades (sean las que sean), hemos decidido...</p>
+  <p class="w3-jumbo" style="font-weight: bold;">¡CASARNOS!
+  <p class="w3-large" style="font-weight: bold;">Nos gustaría compartir ese día con vosotros, así que poneros vuestros mejores chándals ¡y no faltéis! que pasamos lista</p> 
+</div>
+<div class="w3-container w3-padding-64 w3-light-gray w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>NOSOTROS</b></h1>    
+    <div class="w3-content w3-display-container" style="max-width: 700px; max-height: 700x;">
+      <img class="mySlides_2" src="{% static 'app_wed/boda2.jpg' %}" style="width:100%">
+      <img class="mySlides_2" src="{% static 'app_wed/boda3.jpg' %}" style="width:100%">
+      <img class="mySlides_2" src="{% static 'app_wed/boda4-2.jpg' %}" style="width:100%">
+      <img class="mySlides_2" src="{% static 'app_wed/kirita-5.jpg' %}" style="width:100%">
+      <img class="mySlides_2" src="{% static 'app_wed/gato-2.jpg' %}" style="width:100%">
+      <img class="mySlides_2" src="{% static 'app_wed/boda_segovia_2.jpg' %}" style="width:100%">
+      
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs_2(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs_2(1)">&#10095;</button>
+    </div>
+    <br><br>
+    <h1 class="w3-text-grey"><b>LA BODA</b></h1>
+    <p id="demo"></p>
+    <div class="w3-row w3-center">
+        <h2 style="text-decoration: underline; font-size: 25px;">Horarios</h2>
+        <div class="w3-text-justify">
+        <p style="font-size: 16px;"><i class="fas fa-beer"></i>&nbsp;&nbsp;Precóctel - 12:00</p>
+        <p style="font-size: 16px;"><i class="fas fa-heart"></i>&nbsp;&nbsp;Ceremonia - 13:00</p>    
+        <p style="font-size: 16px;"><i class='fas fa-cocktail'></i>&nbsp;&nbsp;Cóctel - 14:00</p> 
+        <p style="font-size: 16px;"><i class="fas fa-utensils"></i>&nbsp;&nbsp;Banquete - 15:30</p>
+        <p style="font-size: 16px;"><i class=" fas fa-music"></i>&nbsp;&nbsp;Fiesta - 18:30</p>
+        </div>
+    </div>
+   </div><br><br> 
+</div>
+
+
+<!--Hoteles y buses-->
+<div class="w3-container w3-padding-64 w3-center" id="dormir" style="background-image: linear-gradient(#edf1f5, #7493a3);">
+  <div class="w3-container">
+    <h2 style="text-decoration: underline;"><i class="fas fa-bed"></i>&nbsp;&nbsp;¿Quieres quedarte a dormir?</h2>
+    <h3>Aquí te dejamos unos links a algunos hoteles cerca de la finca</h3>
+    <div class="w3-center">
+      <a href="https://www.elberrueco.org/donde-dormir/" target="_blank" style = "font-size: 18px; text-decoration: none; color: black;" class="w3-hover-black hotel">Alojamientos El Berrueco (4,5 km)</a><br>
+      <a href="https://turismo.puentesviejas.org/comer-y-dormir" target="_blank" style = "font-size: 18px; text-decoration: none; color: black;" class="w3-hover-black hotel">Alojamientos Mangirón (6 km)</a><br>
+      <a href="http://turismolozoyuela.com/index.php/opcionatm/?comer-y-dormir-dnde-dormir&id=1565&sub=3227" target="_blank" style = "font-size: 18px; text-decoration: none; color: black;" class="w3-hover-black hotel">Alojamientos Lozoyuela (11,5 km)</a><br>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="w3-container">
+    <h2 style="text-decoration: underline;"><i class="fas fa-bus"></i>&nbsp;&nbsp;Horarios Autobuses</h2>
+    <div class="w3-half w3-center">
+      <h3><strong>IDA</strong></h3>
+      <ul style="list-style: none;">
+        <li style="font-size: 16px;">Madrid, Nuevos Ministerios 11:00&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;(Llegada a Aldea Santillana - 12:00)</li>
+      </ul>
+    </div>
+     <div class="w3-half w3-center">
+      <h3><strong>VUELTA</strong></h3>
+      <ul style="list-style: none;">
+        <li style="font-size: 16px;">Aldea Santillana 23:30&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;(Llegada a Madrid, Nuevos Ministerios - 00:30)</li>
+        <li style="font-size: 16px;">Aldea Santillana 01:00&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;(Llegada a Madrid, Nuevos Ministerios - 02:00)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Flores -->
+<div class="w3-display-container bgimg2" style="background: url('{% static 'app_wed/flores.jpg' %}'); min-height: 50%; background-position: center; background-size: cover;"></div>
+
+<!-- La finca -->
+<div class="w3-container w3-padding-64 w3-light-gray" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>LA FINCA</b></h1>
+    <p class="w3-center w3-text-grey">Todo se celebra en el mismo sitio, no tendréis escapatoria</p>
+
+    <div class="w3-content w3-display-container" style="max-width: 700px; max-height: 700x;">
+      <img class="mySlides" src="{% static 'app_wed/aldea_santillana.jpg' %}" style="width:100%">
+      <img class="mySlides" src="{% static 'app_wed/mirabel.jpg' %}" style="width:100%">
+      <img class="mySlides" src="{% static 'app_wed/patio-carro.jpg' %}" style="width:100%">
+      <img class="mySlides" src="{% static 'app_wed/altar.jpg' %}" style="width:100%">
+      <!--    
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    -->
+    </div>
+    <br>
+    <p style="text-align: justify; font-size: 20px;"><i>Cuenta la leyenda que los habitantes del lugar muerieron envenenados al caer una lagartija en la fuente pública durante un banquete de boda en el que estaban presentes todos los vecinos...</i></p>
+    <p style="text-align: center; font-size: 20px;"><i><b>Por si se repite la leyenda, ese día nos dedicaremos a beber vino.</b></i></p>
+    <br><br><br><br>
+    <div class="row">
+      <div class="w3-half w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.645719644708!2d-3.563201684588564!3d40.92351327930957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43e83ff8492357%3A0x65c1cf6eebfed3fd!2sAldea%20Santillana!5e0!3m2!1ses!2ses!4v1579014953945!5m2!1ses!2ses" width="450" height="250" frameborder="0" style="border:3px solid black;" allowfullscreen=""></iframe>
+      </div>
+      <div class="w3-half" style="text-align: center;">
+        <h2 style="text-decoration: underline;">ALDEA SANTILLANA</h2>
+        <h3>Finca Mirabel</h3>
+        <p>Km 9.200 Carretera M-127</p>
+        <p>Código Postal 28754</p>
+        <p>Mangirón, Madrid</p>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="w3-tag w3-large w3-black">DEBIDO A QUE LA FINCA ES UN PARQUE NATURAL, OS PEDIMOS POR FAVOR QUE NO TRAIGÁIS NADA DE CONFETI O DE PIROTECNIA</div>
+  </div>
+</div>
+
+
+<!--Fotos fotógrafo
+<div class="w3-container w3-padding-16 w3-center w3-sand">
+  <p class="w3-large">Haz click <a href="#" style="text-decoration: none; color: blue;">aquí</a> para acceder a las fotos de la boda</p> 
+</div>
+-->
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-center w3-wide" id="rsvp" style="background-image: linear-gradient(#edf1f5, #c16e70);">
+  <h1>ESPERAMOS QUE VENGAS</h1>
+  <p class="w3-large">Confirmad lo antes posible</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">CONFIRMA!</button>
+  </p>
+</div>
+
+<!--FORMULARIO-->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">PUEDES VENIR?</h1>
+      <p>Esperamos que vengas</p>
+      <form name = "form" action="{% url 'wed:confirmar' %}" method="POST">
+        {% csrf_token %}
+        <div>
+          <label><i class="fas fa-user"></i>&nbsp;&nbsp;Nombre</label>
+           {{ form.nombre }}
+        </div><br>
+        <div>
+          <label><i class="fas fa-apple-alt"></i>&nbsp;&nbsp;Indica si necesitas un cambio en el menú</label>
+           {{ form.intolerancia }}
+        </div><br>
+        <div>
+          <label><i class="fas fa-bus"></i>&nbsp;&nbsp;¿Necesitas transporte?</label>
+           {{ form.transporte }}
+        </div><br>
+
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="submit" class="w3-button w3-block w3-green">Voy</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Cancelar</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-16 w3-center" id="banco" style="background-color: #738087;">
+  <h3 class="w3-center"><strong>El regalo, por supuesto, es opcional ; vuestra asistencia es indispensable</strong></h3>
+  <br><br>
+  <div class="row">
+    <div class="w3-half">
+      <p class="w3-large w3-text-white">En la vida hay cosas mucho más importantes que el dinero...</p>
+      <p class="w3-large w3-text-white">pero cuestan taaaaaanto!!</p>
+    </div>
+    <div class="w3-half">
+      <p class="w3-large w3-text-white">Muchas gracias</p>
+      <p class="w3-large w3-text-white">ES88 1465 0140 8517 3016 2945</p>
+    </div>
+  </div>
+</div>
+
+
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="mailto:almuyedu@ejemplo.com" title="ALMU & EDU" target="_blank" class="w3-hover-text-green" style="text-decoration: none; color: white;">
+almuyeduboda@outlook.es</a></p>
+  <br><br><br>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+<script>
+// CUENTA ATRÁS
+var countDownDate = new Date("Sep 26, 2020 13:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+   
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "HA LLEGADO EL DÍA!!!";
+  }
+  else if (days <= 15) {
+    document.getElementById("demo").style.color = "red";
+  }
+}, 1000);
+
+//Carr nosotros
+var slideIndex_2 = 1;
+showDivs_2(slideIndex_2);
+
+function plusDivs_2(m) {
+  showDivs_2(slideIndex_2 += m);
+}
+
+function showDivs_2(m) {
+  var j;
+  var y = document.getElementsByClassName("mySlides_2");
+  if (m > y.length) {slideIndex_2 = 1}
+  if (m < 1) {slideIndex_2 = y.length}
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
+  }
+  y[slideIndex_2-1].style.display = "block";  
+}
+
+//Carr automatico finca
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+</script>
+
+</body>
+</html>
